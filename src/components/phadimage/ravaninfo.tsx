@@ -1,12 +1,10 @@
 'use client'
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 
-type Props = {}
 
-const Ravaninfo = (props: Props) => {
+const Ravaninfo = () => {
     const [showAnimations, setShowAnimations] = useState(false); // Control both animations
     const [svgCompleted, setSvgCompleted] = useState(false); // Track when SVG animation completes
   
@@ -36,7 +34,7 @@ const Ravaninfo = (props: Props) => {
     }, [showAnimations]);
   return (
     <>
-          <span className="absolute -top-6 left-6 z-20 w-full h-full">
+      <span className="absolute -top-48 left-6 z-20 w-full h-full">
         {showAnimations && (
           <motion.svg
             xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +73,7 @@ const Ravaninfo = (props: Props) => {
 
       {/* Card Animation */}
       {svgCompleted && (
-        <div className="absolute -top-0 left-56 z-20 w-full h-full max-w-[300px] text-sm card">
+        <div className="absolute -top-44 left-56 z-20 w-full h-full max-w-[300px] text-sm card">
           <motion.div
             className="rounded-xl shadow-xl bg-white p-6 mt-4"
             initial={{ scale: 0, opacity: 0, originX: 0, originY: 1 }} // Anchor to bottom-left corner
@@ -83,7 +81,7 @@ const Ravaninfo = (props: Props) => {
             transition={{ duration: 0.5, ease: "easeInOut" }}
           >
             <h1 className="text-xl font-bold pb-2">Ravan</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Ravana and Mandore Connection: While Ravana shares similarities with the demon king from Valmiki&apos;s Ramayana, his portrayal in Pabuji ki Phad is nuanced. Associated with Mandore near Jodhpur, this Ravana represents local reinterpretations of epic figures, blending geography and folklore in a distinct regional context.</p>
             {/* <Image src='/ravan.png' width={200} height={100} alt="ravan"/> */}
           </motion.div>
         </div>

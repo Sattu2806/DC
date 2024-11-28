@@ -1,7 +1,5 @@
 'use client'
-import { useEffect, useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import Ravaninfo from "@/components/phadimage/ravaninfo";
 import UmarKotinfo from "@/components/phadimage/umarkot";
 import Ramdevinfo from "@/components/phadimage/ramdevinfo";
@@ -16,9 +14,8 @@ export default function Home() {
 
   return (
     <div className="h-screen flex items-center justify-center relative w-full overflow-hidden">
-      <div className="w-full">
+      <div className="w-full relative">
         <Image src='/Phad1.jpg' width={1000} height={800} alt="Image" className="object-cover w-full" />
-      </div>
       <Ravaninfo/>
       <UmarKotinfo/>
       <Ramdevinfo/>
@@ -26,6 +23,8 @@ export default function Home() {
       <PabujiWeddinginfo/>
       <Demajiinfo/>
       <RoofNathinfo/>
+
+      </div>
     </div>
   );
 }

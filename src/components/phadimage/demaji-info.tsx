@@ -1,19 +1,17 @@
 'use client'
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 
-type Props = {}
 
-const Demajiinfo = (props: Props) => {
+const Demajiinfo = () => {
     const [showAnimations, setShowAnimations] = useState(false); // Control both animations
     const [svgCompleted, setSvgCompleted] = useState(false); // Track when SVG animation completes
   
-    const handleStartAnimation = () => {
-      setShowAnimations(true);
-      setSvgCompleted(false); // Reset to allow sequential animations
-    };
+    // const handleStartAnimation = () => {
+    //   setShowAnimations(true);
+    //   setSvgCompleted(false); // Reset to allow sequential animations
+    // };
   
     // Function to handle closing the card when clicking outside
     const handleClickOutside = (event: MouseEvent) => {

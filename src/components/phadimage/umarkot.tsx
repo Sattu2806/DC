@@ -1,12 +1,10 @@
 'use client'
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 
-type Props = {}
 
-const UmarKotinfo = (props: Props) => {
+const UmarKotinfo = () => {
     const [showAnimations, setShowAnimations] = useState(false); // Control both animations
     const [svgCompleted, setSvgCompleted] = useState(false); // Track when SVG animation completes
   
@@ -36,7 +34,7 @@ const UmarKotinfo = (props: Props) => {
     }, [showAnimations]);
   return (
     <>
-          <span className="absolute top-12 left-[11%] z-20 w-full h-full">
+      <span className="absolute -top-28 left-[11%] z-20 w-full h-full">
         {showAnimations && (
           <motion.svg
             xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +81,7 @@ const UmarKotinfo = (props: Props) => {
 
       {/* Card Animation */}
       {svgCompleted && (
-        <div className="absolute top-12 left-1/4 z-20 w-full h-full max-w-[300px] text-sm card-umarkot">
+        <div className="absolute -top-24 left-1/4 z-20 w-full h-full max-w-[300px] text-sm card-umarkot">
           <motion.div
             className="rounded-xl shadow-xl bg-white p-6 mt-4"
             initial={{ scale: 0, opacity: 0, originX: 0, originY: 1 }} // Anchor to bottom-left corner
