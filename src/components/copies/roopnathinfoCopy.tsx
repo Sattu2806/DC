@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
-const UmarKotinfo = () => {
+const RoopNathinfoCopy = () => {
   const [showAnimations, setShowAnimations] = useState(false); // Control both animations
 
   const handleStartAnimation = () => {
@@ -72,12 +72,9 @@ const UmarKotinfo = () => {
       <Dialog open={showAnimations} onOpenChange={setShowAnimations}>
         <DialogContent className="sm:max-w-lg">
           <DialogHeader>
-            <DialogTitle>UmarKot Sodan</DialogTitle>
+            <DialogTitle>RoopNath</DialogTitle>
             <DialogDescription>
-              The Sodhos are a ruling clan from Umarkot in Sindh, aka Umarkot Sodhan, initially a peripheral part of Pabu’s story. 
-              Pabu passes through their kingdom on his adventures, but they soon become significant allies when Princess Phulvanti of 
-              the Sodho clan falls in love with him and requests his hand in marriage. This alliance through marriage links the Sodhos 
-              with Pabu’s Kolu court, strengthening their ties and marking a key moment in Pabu’s journey.
+            Roop (or Roop Nath, because of his affiliation with yogic practices), is Pabu&apos;s nephew, the son of Pabu&apos;s brother, Buro, and his wife, Gailovat. After a fierce battle between the Kichis and Pabu&apos;s army, Roop is the only one left alive, hiding during his childhood to survive as the last of his family and lineage. Driven by a strong sense of duty and revenge, Roop dedicates himself to avenging his uncle Pabu and the entire family. His story is one of survival, honor, and the endurance of lineage, where the need to uphold family legacy intertwines with themes of justice and devotion.
             </DialogDescription>
           </DialogHeader>
           <button
@@ -90,19 +87,19 @@ const UmarKotinfo = () => {
 
       {/* Trigger Button */}
       <motion.button
-        className="absolute top-[42%] left-[15%] cursor-pointer z-[50] rounded-full w-4 h-4 bg-orange-700"
+        className="absolute top-[60%] left-[57.5%] cursor-pointer z-[50] rounded-full w-4 h-4 bg-rose-500  "
         onClick={handleStartAnimation}
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
       >
         <motion.span
-          className="absolute top-0 left-0 w-full h-full rounded-full bg-orange-400 opacity-50"
-          animate={{ scale: [1, 1.3, 1.5, 1], opacity: [0.6, 0.4, 0] }}
-          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          className="absolute top-0 left-0 w-full h-full rounded-full bg-rose-300 opacity-50"
+          animate={{ scale: [1, 1.3, 1.5,1], opacity: [0.6, 0.4, 0] }}
+          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut",delay:3 }}
         />
       </motion.button>
     </>
   );
 };
 
-export default UmarKotinfo;
+export default RoopNathinfoCopy

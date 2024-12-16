@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
-const UmarKotinfo = () => {
+const DemajiinfoCopy = () => {
   const [showAnimations, setShowAnimations] = useState(false); // Control both animations
 
   const handleStartAnimation = () => {
@@ -72,37 +72,34 @@ const UmarKotinfo = () => {
       <Dialog open={showAnimations} onOpenChange={setShowAnimations}>
         <DialogContent className="sm:max-w-lg">
           <DialogHeader>
-            <DialogTitle>UmarKot Sodan</DialogTitle>
+            <DialogTitle>Dhema Ji</DialogTitle>
             <DialogDescription>
-              The Sodhos are a ruling clan from Umarkot in Sindh, aka Umarkot Sodhan, initially a peripheral part of Pabu’s story. 
-              Pabu passes through their kingdom on his adventures, but they soon become significant allies when Princess Phulvanti of 
-              the Sodho clan falls in love with him and requests his hand in marriage. This alliance through marriage links the Sodhos 
-              with Pabu’s Kolu court, strengthening their ties and marking a key moment in Pabu’s journey.
+            Dhebo (also called Dhema), one of Pabu’s four loyal ministers, stands out for his unmatched loyalty and raw physical strength. Each of Pabu’s ministers has a unique quality that complements the others, and Dhema’s defining traits are his devotion and readiness to sacrifice anything for his master. He is a symbol of unshakable dedication, with his immense strength taking center stage in stories about him. A striking example of this is when he consumes opium, an act that highlights both his fearless nature and his unwavering willingness to serve Pabu, no matter the cost. 
             </DialogDescription>
           </DialogHeader>
           <button
-            className="mt-4 bg-orange-500 text-white rounded px-4 py-2 hover:bg-orange-700"
+            className="mt-4 bg-purple-700 text-white rounded px-4 py-2 hover:bg-orange-700"
           >
             Close
           </button>
         </DialogContent>
       </Dialog>
 
-      {/* Trigger Button */}
       <motion.button
-        className="absolute top-[42%] left-[15%] cursor-pointer z-[50] rounded-full w-4 h-4 bg-orange-700"
+        className="absolute top-[36%] left-[61%] cursor-pointer z-[50] rounded-full w-4 h-4 bg-violet-700 hover:bg-purple-700 "
         onClick={handleStartAnimation}
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
       >
         <motion.span
-          className="absolute top-0 left-0 w-full h-full rounded-full bg-orange-400 opacity-50"
-          animate={{ scale: [1, 1.3, 1.5, 1], opacity: [0.6, 0.4, 0] }}
-          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          className="absolute top-0 left-0 w-full h-full rounded-full bg-purple-500 opacity-50"
+          animate={{ scale: [1, 1.3, 1.5,1], opacity: [0.6, 0.4, 0] }}
+          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut",delay:5 }}
         />
       </motion.button>
     </>
   );
 };
 
-export default UmarKotinfo;
+export default DemajiinfoCopy
+

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
-const UmarKotinfo = () => {
+const Sati = () => {
   const [showAnimations, setShowAnimations] = useState(false); // Control both animations
 
   const handleStartAnimation = () => {
@@ -72,16 +72,13 @@ const UmarKotinfo = () => {
       <Dialog open={showAnimations} onOpenChange={setShowAnimations}>
         <DialogContent className="sm:max-w-lg">
           <DialogHeader>
-            <DialogTitle>UmarKot Sodan</DialogTitle>
+            <DialogTitle>Sati</DialogTitle>
             <DialogDescription>
-              The Sodhos are a ruling clan from Umarkot in Sindh, aka Umarkot Sodhan, initially a peripheral part of Pabu’s story. 
-              Pabu passes through their kingdom on his adventures, but they soon become significant allies when Princess Phulvanti of 
-              the Sodho clan falls in love with him and requests his hand in marriage. This alliance through marriage links the Sodhos 
-              with Pabu’s Kolu court, strengthening their ties and marking a key moment in Pabu’s journey.
+            Sati: In the Pabuji epic, when warriors die on the battlefield, their wives often choose to join them in an act of honor, known as sati. This form of voluntary suicide reflects the devotion and loyalty of women in the face of their husbands&apos; deaths. Several satis occur throughout the story, but the most significant takes place during the final battle with the Khinchi, where the entire Kolu clan perishes. In this dramatic moment, all the men and women of the clan choose to sacrifice themselves, with the exception of Roop, Pabu&apos;s nephew, who is saved by his mother. This event marks the tragic end of the Kolu clan and underscores the themes of sacrifice and devotion woven throughout the narrative.
             </DialogDescription>
           </DialogHeader>
           <button
-            className="mt-4 bg-orange-500 text-white rounded px-4 py-2 hover:bg-orange-700"
+            className="mt-4 bg-red-500 text-white rounded px-4 py-2 hover:bg-red-700"
           >
             Close
           </button>
@@ -90,13 +87,13 @@ const UmarKotinfo = () => {
 
       {/* Trigger Button */}
       <motion.button
-        className="absolute top-[42%] left-[15%] cursor-pointer z-[50] rounded-full w-4 h-4 bg-orange-700"
+        className="absolute top-[78%] left-[77%] cursor-pointer z-[50] rounded-full w-4 h-4 bg-red-700"
         onClick={handleStartAnimation}
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
       >
         <motion.span
-          className="absolute top-0 left-0 w-full h-full rounded-full bg-orange-400 opacity-50"
+          className="absolute top-0 left-0 w-full h-full rounded-full bg-red-400 opacity-50"
           animate={{ scale: [1, 1.3, 1.5, 1], opacity: [0.6, 0.4, 0] }}
           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
         />
@@ -105,4 +102,4 @@ const UmarKotinfo = () => {
   );
 };
 
-export default UmarKotinfo;
+export default Sati

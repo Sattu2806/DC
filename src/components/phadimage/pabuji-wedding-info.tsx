@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
-const UmarKotinfo = () => {
+const PabujiWeddinginfo = () => {
   const [showAnimations, setShowAnimations] = useState(false); // Control both animations
 
   const handleStartAnimation = () => {
@@ -72,16 +72,13 @@ const UmarKotinfo = () => {
       <Dialog open={showAnimations} onOpenChange={setShowAnimations}>
         <DialogContent className="sm:max-w-lg">
           <DialogHeader>
-            <DialogTitle>UmarKot Sodan</DialogTitle>
+            <DialogTitle>Pabu’s Wedding: </DialogTitle>
             <DialogDescription>
-              The Sodhos are a ruling clan from Umarkot in Sindh, aka Umarkot Sodhan, initially a peripheral part of Pabu’s story. 
-              Pabu passes through their kingdom on his adventures, but they soon become significant allies when Princess Phulvanti of 
-              the Sodho clan falls in love with him and requests his hand in marriage. This alliance through marriage links the Sodhos 
-              with Pabu’s Kolu court, strengthening their ties and marking a key moment in Pabu’s journey.
+            Pabuji was initially reluctant to marry, as his primary focus was on protecting cattle and his adventures. However, when the King of Umarkot in Sindh proposed a marriage to Pabu on behalf of his daughter, Phulvanti, Pabu reluctantly agreed. The princess had fallen in love with Pabu, and despite his reservations, he eventually accepted the proposal. However, he delayed the journey by demanding saffron to dye the clothes of his wedding procession, which sparked a war with Lakkhu Pathan, the saffron owner. After the battle, Pabu set off for Umarkot, but Deval, whom he had promised to protect, tried to convince him to stay or leave some men behind. Pabu, however, insisted that he would come immediately if she needed him, even during the wedding. As they journeyed, ominous signs, including a tiger killed by Dhebo, appeared, but they continued to Umarkot, where preparations for the wedding were underway. Just before the ceremony, Deval arrived in the form of a bird, bringing the news that Khinchi had stolen her cattle, setting the stage for further conflict.
             </DialogDescription>
           </DialogHeader>
           <button
-            className="mt-4 bg-orange-500 text-white rounded px-4 py-2 hover:bg-orange-700"
+            className="mt-4 bg-purple-500 text-white rounded px-4 py-2 hover:bg-purple-700"
           >
             Close
           </button>
@@ -90,13 +87,13 @@ const UmarKotinfo = () => {
 
       {/* Trigger Button */}
       <motion.button
-        className="absolute top-[42%] left-[15%] cursor-pointer z-[50] rounded-full w-4 h-4 bg-orange-700"
+        className="absolute top-[58%] left-[16%] cursor-pointer z-[50] rounded-full w-4 h-4 bg-purple-700"
         onClick={handleStartAnimation}
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
       >
         <motion.span
-          className="absolute top-0 left-0 w-full h-full rounded-full bg-orange-400 opacity-50"
+          className="absolute top-0 left-0 w-full h-full rounded-full bg-purple-400 opacity-50"
           animate={{ scale: [1, 1.3, 1.5, 1], opacity: [0.6, 0.4, 0] }}
           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
         />
@@ -105,4 +102,5 @@ const UmarKotinfo = () => {
   );
 };
 
-export default UmarKotinfo;
+
+export default PabujiWeddinginfo;

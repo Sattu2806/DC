@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
-const UmarKotinfo = () => {
+const Chando = () => {
   const [showAnimations, setShowAnimations] = useState(false); // Control both animations
 
   const handleStartAnimation = () => {
@@ -72,16 +72,13 @@ const UmarKotinfo = () => {
       <Dialog open={showAnimations} onOpenChange={setShowAnimations}>
         <DialogContent className="sm:max-w-lg">
           <DialogHeader>
-            <DialogTitle>UmarKot Sodan</DialogTitle>
+            <DialogTitle>Chando</DialogTitle>
             <DialogDescription>
-              The Sodhos are a ruling clan from Umarkot in Sindh, aka Umarkot Sodhan, initially a peripheral part of Pabu’s story. 
-              Pabu passes through their kingdom on his adventures, but they soon become significant allies when Princess Phulvanti of 
-              the Sodho clan falls in love with him and requests his hand in marriage. This alliance through marriage links the Sodhos 
-              with Pabu’s Kolu court, strengthening their ties and marking a key moment in Pabu’s journey.
+            Chando, one of Pabu’s loyal ministers and Dhebo’s brother, stands out not through appearance but intellect. Modest in stature, clean-shaven, with a thin mustache and dressed in simple white, he might seem ordinary at first glance. But Chando’s true strength lies in his wisdom. As the court’s scribe and keeper of records, he is highly educated, skilled in reading, writing, and preserving the kingdom’s knowledge. A trusted messenger, Chando embodies quiet intelligence and thoughtfulness, proving that strength isn’t always about physical might—it’s also about the power of the mind.
             </DialogDescription>
           </DialogHeader>
           <button
-            className="mt-4 bg-orange-500 text-white rounded px-4 py-2 hover:bg-orange-700"
+            className="mt-4 bg-rose-500 text-white rounded px-4 py-2 hover:bg-rose-700"
           >
             Close
           </button>
@@ -90,13 +87,13 @@ const UmarKotinfo = () => {
 
       {/* Trigger Button */}
       <motion.button
-        className="absolute top-[42%] left-[15%] cursor-pointer z-[50] rounded-full w-4 h-4 bg-orange-700"
+        className="absolute top-[36%] left-[57%] cursor-pointer z-[50] rounded-full w-4 h-4 bg-rose-700"
         onClick={handleStartAnimation}
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
       >
         <motion.span
-          className="absolute top-0 left-0 w-full h-full rounded-full bg-orange-400 opacity-50"
+          className="absolute top-0 left-0 w-full h-full rounded-full bg-rose-400 opacity-50"
           animate={{ scale: [1, 1.3, 1.5, 1], opacity: [0.6, 0.4, 0] }}
           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
         />
@@ -105,4 +102,4 @@ const UmarKotinfo = () => {
   );
 };
 
-export default UmarKotinfo;
+export default Chando

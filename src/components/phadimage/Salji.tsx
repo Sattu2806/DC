@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
-const UmarKotinfo = () => {
+const Salji = () => {
   const [showAnimations, setShowAnimations] = useState(false); // Control both animations
 
   const handleStartAnimation = () => {
@@ -72,16 +72,13 @@ const UmarKotinfo = () => {
       <Dialog open={showAnimations} onOpenChange={setShowAnimations}>
         <DialogContent className="sm:max-w-lg">
           <DialogHeader>
-            <DialogTitle>UmarKot Sodan</DialogTitle>
+            <DialogTitle>Salji</DialogTitle>
             <DialogDescription>
-              The Sodhos are a ruling clan from Umarkot in Sindh, aka Umarkot Sodhan, initially a peripheral part of Pabu’s story. 
-              Pabu passes through their kingdom on his adventures, but they soon become significant allies when Princess Phulvanti of 
-              the Sodho clan falls in love with him and requests his hand in marriage. This alliance through marriage links the Sodhos 
-              with Pabu’s Kolu court, strengthening their ties and marking a key moment in Pabu’s journey.
+            Salji, one of Pabu’s four ministers, is a mystical seer gifted with the power to read minds and foresee the future. His striking light green eyes and vibrant yellow attire set him apart, radiating an aura of wisdom and mystery. With his magical sight, Salji often intervenes at critical moments, saving the kingdom from unseen threats. His presence at court symbolizes the importance of foresight and intuition in navigating challenges.
             </DialogDescription>
           </DialogHeader>
           <button
-            className="mt-4 bg-orange-500 text-white rounded px-4 py-2 hover:bg-orange-700"
+            className="mt-4 bg-teal-500 text-white rounded px-4 py-2 hover:bg-teal-700"
           >
             Close
           </button>
@@ -90,13 +87,13 @@ const UmarKotinfo = () => {
 
       {/* Trigger Button */}
       <motion.button
-        className="absolute top-[42%] left-[15%] cursor-pointer z-[50] rounded-full w-4 h-4 bg-orange-700"
+        className="absolute top-[36%] left-[66%] cursor-pointer z-[50] rounded-full w-4 h-4 bg-teal-700"
         onClick={handleStartAnimation}
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
       >
         <motion.span
-          className="absolute top-0 left-0 w-full h-full rounded-full bg-orange-400 opacity-50"
+          className="absolute top-0 left-0 w-full h-full rounded-full bg-teal-400 opacity-50"
           animate={{ scale: [1, 1.3, 1.5, 1], opacity: [0.6, 0.4, 0] }}
           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
         />
@@ -105,4 +102,4 @@ const UmarKotinfo = () => {
   );
 };
 
-export default UmarKotinfo;
+export default Salji

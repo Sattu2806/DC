@@ -4,9 +4,22 @@ import Ravaninfo from "@/components/phadimage/ravaninfo";
 import UmarKotinfo from "@/components/phadimage/umarkot";
 import Ramdevinfo from "@/components/phadimage/ramdevinfo";
 import Pabujiinfo from "@/components/phadimage/pabujiinfo";
-import PabujiWeddinginfo from "@/components/phadimage/pabuji-wedding-info copy";
+import PabujiWeddinginfo from "@/components/phadimage/pabuji-wedding-info";
 import Demajiinfo from "@/components/phadimage/demaji-info";
 import RoofNathinfo from "@/components/phadimage/roopnathinfo";
+import BhatisCourt from "@/components/phadimage/BhatisCourt";
+import PabujiinfoCopy from "@/components/copies/pabujiinfoCopy";
+import Chando from "@/components/phadimage/Chando";
+import DemajiinfoCopy from "@/components/copies/demaji-infoCpy";
+import Salji from "@/components/phadimage/Salji";
+import Harmal from "@/components/phadimage/Harmal";
+import MirzaKhan from "@/components/phadimage/MirzaKhan";
+import GujaoWell from "@/components/phadimage/GujaoWell";
+import Sati from "@/components/phadimage/Sati";
+import RoopNathinfoCopy from "@/components/copies/roopnathinfoCopy";
+import HermalJogi from "@/components/phadimage/HermalJogi";
+import Kesarkalmi from "@/components/phadimage/KesarKalmi";
+import Deval from "@/components/phadimage/Deval";
 
 export default function Home() {
 
@@ -20,10 +33,22 @@ export default function Home() {
       <UmarKotinfo/>
       <Ramdevinfo/>
       <Pabujiinfo/>
+      <PabujiinfoCopy/>
+      <Chando/>
+      <DemajiinfoCopy/>
+      <Salji/>
+      <Harmal/>
+      <MirzaKhan/>
+      <GujaoWell/>
+      <Sati/>
       <PabujiWeddinginfo/>
       <Demajiinfo/>
       <RoofNathinfo/>
-
+      <HermalJogi/>
+      <Kesarkalmi/>
+      <Deval/>
+      <RoopNathinfoCopy/>
+      <BhatisCourt/>
       </div>
     </div>
   );
